@@ -11,7 +11,6 @@ public class GUIOutputStrategy implements OutputStrategy {
     
     @Override
     public void outputMessage(String msg) {
-        JOptionPane.showMessageDialog(null, "Hello World");
-        JOptionPane.showMessageDialog(null, msg);
+        JOptionPane.showMessageDialog(null, "You enterd - " + msg);
     }
 }
