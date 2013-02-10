@@ -1,6 +1,5 @@
 
 package dippractice;
-import javax.swing.JOptionPane;
 /**
  *
  * @author mgrinker
@@ -8,7 +7,7 @@ import javax.swing.JOptionPane;
 public class Driver {
     public static void main(String[] args) {
 
-        JOptionPane.showMessageDialog(null, "Hello World");
+
 
         // Get input from scanner output to GUI
         InputStrategy in = new ScannerInput();
@@ -17,14 +16,14 @@ public class Driver {
         service.inputMessage();
         service.outputMessage();
         
-//        // Get input from scanner output to console
+        // Get input from scanner output to console
         InputStrategy in2 = new ScannerInput();
         OutputStrategy out2 = new ConsoleOutputStrategy();
         MessageService service2 = new MessageService(in2,out2);
         service2.inputMessage();
         service2.outputMessage();
         
-//        // Get input from GUI output to console
+        // Get input from GUI output to console
         InputStrategy in3 = new GuiInput();
         OutputStrategy out3 = new ConsoleOutputStrategy();
         MessageService service3 = new MessageService(in3,out3);
